@@ -1,9 +1,24 @@
 body{
-    background-image: url('');
+    background-image: url('babybackground.jpg.jpg');
     background-size: cover;
     background-repeat: no repeat;
     background-position: center;
     height: 180vh;
     margin:0;
+}
+
+
+html,body{
+  margin:0 auto;
+  font-family:Arial;
+}
+.container{
+  display:flex;
+  padding:10px;
+  flex-wrap:wrap;
+}
+.center{
+  justify-content:center;
+  align-items:center;
 }
 
