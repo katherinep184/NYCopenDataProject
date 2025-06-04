@@ -25,12 +25,6 @@ a{
   text-decoration:none;
 }
 
-#click_me:hover{
-  color:blue !important;
-}
-/* CSS Specificity 
-   inline > id > class > element
-*/
 nav{
   padding:5px;
 }
@@ -55,18 +49,6 @@ nav a{
   background-color:pink
 }
 * {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1100px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
 
 /* Next & previous buttons */
 .prev, .next {
@@ -143,21 +125,68 @@ nav a{
   from {opacity: .4}
   to {opacity: 1}
   
- p{
-  font-family: "Lucida Console", "Courier New", monospace;
-}
-p{
-  font-style: italic;
-}
+ 
 div{
 	margin:0 10px 0 10px;
   flex:1;
   text-align:left;
-  background-color: black;
+  background-color: pink;
   text-align:left
 }
 
 p{
   font-size: 100px;
  }
+}
+
+.card{
+  flex:1;
+  margin:10px;
+  padding:10px;
+  border:1px solid gray;
+  text-align:center;
+  min-width: 180px;
+  max-width: 180px;
+  overflow:hidden;
+  box-shadow:2px 2px 2px white;
+}
+
+.highlight{
+  font-style:italic;
+  color:blue;
+}
+.heading{
+  font-weight:bold;
+}
+.card a{
+  text-decoration:none;
+  background-color:blue;
+  color:white;
+  border-radius:4px;
+  padding:6px;
+  box-shadow:2px 2px 2px whitesmoke;
+}
+.card a:hover{
+  background-color:cornflowerblue;
+}
+
+.item{
+  width:150px;
+  height:150px;
+  object-fit:cover;
+}
+center{
+      justify-content:center;
+      align-items:center
+}
+.button{
+  text-decoration:none;
+  background-color:hotpink;
+  color:white;
+  border-radius:4px;
+  padding:6px;
+  box-shadow:2px 2px 2px lightpink;
+}
+.button:hover{
+  background-color:palevioletred;
 }

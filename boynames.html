@@ -4,12 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="index.css" rel="stylesheet" type="text/css" />  
     <link href="boynames.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
+  <body onload="init()">
     <script src="script.js"></script>
+    <script src="boynames.js"></script>
 
     <div id="banner">
       <h1><b>Boys Baby Names<b/></h1>
@@ -18,9 +17,17 @@
     <nav class="container">
       <a href="index.html">Home</a>
       <a href="boynames.html">Boys Names </a>
-      <a href="girlnames.html">Girls Names</a>
+      <a href="girlnames.html">Girl Names </a>
     </nav>
-
-    <div class="container">
-	  <div style="flex:1">
-      
+<div class="container">
+<input style="flex:1;text-align:right;" type="text" id="namesearch" placeholder="Enter First letters of boy names" > &nbsp; 
+ <a class="button" onclick="searchBoynames()"> Search </a>
+    </div>
+    <div class="container" id="output">
+   </div>
+   <div id="footer" class="container center">OMG! Your having a baby boy :)</div>
+    <div class="container" id="output">
+	  </div>
+  </body>
+  </html>
+ 

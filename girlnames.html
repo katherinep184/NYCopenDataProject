@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="index.css" rel="stylesheet" type="text/css" />  
+    <link href="style.css" rel="stylesheet" type="text/css" /> 
     <link href="girlnames.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <script src="script.js"></script>
+    <script src="girlnames.js"></script>
 
     <div id="banner">
       <h1><b>Girls Baby Names<b/></h1>
@@ -22,10 +22,14 @@
     </nav>
 
     <div class="container">
-	  <div style="flex:1">
-
-    body {
-  background-image: url('girlbackground.jpg');
-}
-</style>
-
+<input style="flex:1;text-align:right;" type="text" id="namesearch" placeholder="Enter First letters of Girl names" > &nbsp; 
+ <a class="button" onclick="searchGirlnames()"> Search </a>
+    </div>
+    <div class="container" id="output">
+   </div>
+   <div id="footer" class="container center">OMG! Your having a baby girl :)</div>
+    <div class="container" id="output">
+	  </div>
+  </body>
+  </html>
+ 
