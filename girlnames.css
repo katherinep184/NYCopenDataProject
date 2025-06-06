@@ -31,14 +31,14 @@ nav{
 .container{
 	  display:flex;
 	  text-align:center; 
-    background-color:black;
+    background-color:pink;
 }
 nav a{
   color:white;
   margin:0 10px 0 10px;
   flex:1;
   text-align:center;
-  background-color:black
+  background-color:black;
 }
 /* Start */
 #banner{
