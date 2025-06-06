@@ -4,16 +4,23 @@ async function init(){
   let link = "https://data.cityofnewyork.us/resource/25th-nujf.json";
   info = await fetch(link);
   data = await info.json();
+  //alert(1)
   
-  function searchGirlnames(){
+  
+  }
 
+  function searchGirlnames(){
+    
     let output = document.getElementById("output");
     let searchGirlnames = document.getElementById("namesearch");
     let build = "";
-
-     for(let i=0; i<data.length; i++){
+  //alert(searchGirlnames.value)
+ 
+ 
+    for(let i=0; i<data.length; i++){
       let girlnames = data[i]
-        if(girlnames.gndr == "GIRL" && girlnames.nm.startsWith(searchGirlnames.value)){
+      output.innerHTML += girlnames.gndr;
+        if(girlnames.gndr == "FEMALE" && girlnames.nm.startsWith(searchGirlnames.value)){
       
           build += `<div class=card>`;
           build +=`<h3>${girlnames.brth_yr}</h3>`;
@@ -23,4 +30,5 @@ async function init(){
         }
       }
     output.innerHTML = build;
+
   }
