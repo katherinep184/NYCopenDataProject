@@ -1,5 +1,5 @@
 body {
-  background-image: url('girlbackground.jpg');
+  
   background-size: cover;
   background-repeat: no repeat;
   background-position:center;
@@ -24,20 +24,24 @@ body{
 a{
   text-decoration:none;
 }
+
+#click_me:hover{
+  color:blue !important;
+}
 /* CSS Specificity 
    inline > id > class > element
 */
-
 nav{
   padding:5px;
 }
 .container{
-	  display:flex;
-	  text-align:center; 
-    background-color:pink;
+    display:flex;
+    text-align:center; 
+    background-color:lightgreen;
+    flex-wrap: wrap;
 }
 nav a{
-  color:white;
+  color:c=white;
   margin:0 10px 0 10px;
   flex:1;
   text-align:center;
@@ -49,10 +53,11 @@ nav a{
   padding:10px;
   text-align:center;
   font-weight:bold;
-  background-color:pink
+  background-color:green;
 }
 * {box-sizing:border-box}
-card{
+
+.card{
   flex:1;
   margin:10px;
   padding:10px;
@@ -89,7 +94,7 @@ card{
   object-fit:cover;
 }
 body {
-  background-image: url('girlbackground.jpg');
+  background-image: url('chartpage.jpg');
   background-size: cover;
   background-repeat: no repeat;
   background-position:center;
@@ -104,16 +109,16 @@ html,body{
 
 .center{
       justify-content:center;
-      align-items:center;
+      align-items:center
 }
 .button{
   text-decoration:none;
-  background-color:pink;
+  background-color:blue;
   color:white;
   border-radius:4px;
   padding:6px;
   box-shadow:2px 2px 2px black;
 }
 .button:hover{
-  background-color:pink;
+  background-color:cornflowerblue;
 }

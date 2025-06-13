@@ -28,5 +28,4 @@ async function init(){
         }
       }
     output.innerHTML = build;
-
-  }
+    }

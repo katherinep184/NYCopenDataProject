@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />  
+    <link href="charts.css" rel="stylesheet" type="text/css" />
+    <link href="c3-eb4b9be8.css" rel=" "stylesheet" type=""text/css"/>
+    <script src="d3-5.8.2.min-c5268e33.js"></script>
+    <script src="c3.min-d2a1f852.js"></script>
+  </head>
+  <body onload="init()">
+      <script src="charts.js"></script>
+
+    <div id="banner">
+      <h1><b>Charts<b/></h1>
+      <p>Info of Babys<p>
+    </div>
+    <nav class="container">
+      <a href="index.html">Home</a>
+      <a href="boynames.html">Boys Names </a>
+      <a href="girlnames.html">Girls Names</a>
+      <a href="charts.html">Charts</a>
+    </nav>
+ <div class="container">
+    <div style="flex:1">
+
+      
+
+
+
+       </div>
+    <div class="container">
+      <div id="panel">
+        <div class="card">
+          <h3>Select Chart Type</h3>
+          <select id="chartType" style="width:200px;">
+            <option value="bar">Select Chart Type</option>
+            <option value="bar">Bar</option>
+            <option value="pie">Pie</option>
+          </select>
+        </div>
+        <div class="card">
+          
+          <a class="button" onclick="accidentsByBorough()"> Display </a>
+        </div>
+        
+      </div>
+      <div class="card">
+       <div id="chart"></div>
+      </div>
+   
